@@ -4,6 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script>
+(function () {
+  function fixVideos() {
+    document.querySelectorAll("video").forEach(function (v) {
+      if (!v.controls) v.controls = true;
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    fixVideos();
+    new MutationObserver(fixVideos).observe(document.body, { childList: true, subtree: true });
+    setInterval(fixVideos, 2000);
+  });
+})();
+</script>
 </head>
 <body>
 <x-dc>
