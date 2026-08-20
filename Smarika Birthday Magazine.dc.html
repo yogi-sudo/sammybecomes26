@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="_ds/modernist-5dc74288-5442-4a13-bce0-9a78a1728ae5/styles.css">
+<script src="_ds/modernist-5dc74288-5442-4a13-bce0-9a78a1728ae5/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  body { margin: 0; background: #201e1d; font-family: "Archivo", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #ae1800; text-decoration: none; }
+  a:hover { color: #dd2b0f; }
+  image-slot { filter: grayscale(1) contrast(1.08); }
+</style>
+</helmet>
+
+<div style="max-width:430px;margin:0 auto;background:#f3f2f2;color:#201e1d;font-size:15px;line-height:1.55">
+
+  <sc-if value="{{ showInstructions }}" hint-placeholder-val="{{ true }}">
+    <section data-screen-label="00 How to fill this in" style="background:#201e1d;color:#f3f2f2;padding:20px 16px">
+      <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ff9783">For Palvika — turn this panel off before you send it</p>
+      <h2 style="margin:8px 0 14px;font-weight:800;font-size:26px;line-height:1.05;letter-spacing:-0.02em;color:#f3f2f2">Drop the photos in, then pass it on</h2>
+      <div style="display:grid;gap:10px;font-size:14px">
+        <p style="margin:0"><span style="color:#ff563c;font-weight:800">01</span> &nbsp;Drag a photo from your phone or desktop straight onto any grey box — or tap it to browse. Double-tap a filled photo to move and zoom it.</p>
+        <p style="margin:0"><span style="color:#ff563c;font-weight:800">02</span> &nbsp;Click any text to rewrite it. The dashed lines are blanks left for your own words.</p>
+        <p style="margin:0"><span style="color:#ff563c;font-weight:800">03</span> &nbsp;When it's done, share the link with Smarika — the photos travel with it.</p>
+      </div>
+    </section>
+  </sc-if>
+
+  <section data-screen-label="01 Cover" style="border-bottom:2px solid #201e1d">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px;border-bottom:2px solid #201e1d;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">
+      <span>Issue No. 01</span>
+      <span style="color:#ae1800">02 Sept</span>
+    </div>
+    <div style="padding:16px 16px 8px">
+      <h1 style="margin:0;font-weight:800;font-size:76px;line-height:0.82;letter-spacing:-0.04em;text-transform:uppercase">Smar<br>ika</h1>
+      <p style="margin:12px 0 0;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#605d5d">The birthday issue — one friend, fully documented</p>
+    </div>
+    <div style="position:relative;height:420px;border-top:2px solid #201e1d;border-bottom:2px solid #201e1d;margin-top:16px">
+      <image-slot id="cover" shape="rect" fit="cover" placeholder="Cover photo — the best one of her"></image-slot>
+      <div style="position:absolute;left:0;bottom:0;background:#ec3013;color:#f3f2f2;padding:8px 12px;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;pointer-events:none">Cover star: herself</div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:2px solid #201e1d">
+      <div style="padding:12px 16px;border-right:2px solid #201e1d">
+        <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#605d5d">Inside</p>
+        <p style="margin:6px 0 0;font-weight:600">A quiz she will fail. A timeline. Ten crimes.</p>
+      </div>
+      <div style="padding:12px 16px">
+        <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#605d5d">Editor</p>
+        <p style="margin:6px 0 0;font-weight:600">Palvika</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="02 Editor's letter" style="padding:24px 16px;border-bottom:2px solid #201e1d">
+    <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ae1800">Editor's letter</p>
+    <h2 style="margin:8px 0 16px;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.02em">Happy birthday, you menace.</h2>
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start">
+      <image-slot id="letter-portrait" shape="rect" fit="cover" style="width:120px;height:150px" placeholder="A photo of her"></image-slot>
+      <p style="margin:0">A whole year of you again. Somehow the group chat survived, my camera roll did not, and I still think you are the funniest person I know — mostly on purpose.</p>
+    </div>
+    <p style="margin:16px 0 0">This issue exists because you deserve a magazine, not a text at 11:58pm. Everything printed here is true, lightly exaggerated, and legally unprovable.</p>
+    <div style="margin-top:20px;border:2px solid #201e1d;padding:16px;background:#eae9e9">
+      <p style="margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#605d5d">A note in my own words</p>
+      <div style="border-bottom:1px dashed #9b9797;height:26px"></div>
+      <div style="border-bottom:1px dashed #9b9797;height:26px"></div>
+      <div style="border-bottom:1px dashed #9b9797;height:26px"></div>
+      <div style="border-bottom:1px dashed #9b9797;height:26px"></div>
+      <sc-if value="{{ showFillHints }}" hint-placeholder-val="{{ true }}">
+        <p style="margin:10px 0 0;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#ae1800">palvika → write the real thing here</p>
+      </sc-if>
+    </div>
+    <p style="margin:16px 0 0;font-weight:800;font-size:20px">— Palvika</p>
+  </section>
+
+  <section data-screen-label="03 Timeline" style="border-bottom:2px solid #201e1d">
+    <div style="padding:24px 16px 16px">
+      <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ae1800">Timeline</p>
+      <h2 style="margin:8px 0 0;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.02em">How we got here</h2>
+    </div>
+    <div style="display:grid;border-top:2px solid #201e1d">
+      <div style="display:grid;grid-template-columns:84px minmax(0,1fr);border-bottom:2px solid #201e1d">
+        <div style="padding:14px 16px;border-right:2px solid #201e1d;font-weight:800;font-size:20px;color:#ec3013">Day 1</div>
+        <div style="padding:14px 16px">
+          <p style="margin:0;font-weight:600">The day we met</p>
+          <p style="margin:4px 0 0;color:#605d5d">Neither of us remembers it the same way. Mine is the correct version.</p>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:84px minmax(0,1fr);border-bottom:2px solid #201e1d">
+        <div style="padding:14px 16px;border-right:2px solid #201e1d;font-weight:800;font-size:20px;color:#ec3013">Yr 1</div>
+        <div style="padding:14px 16px">
+          <p style="margin:0;font-weight:600">First unhinged trip</p>
+          <p style="margin:4px 0 0;color:#605d5d">Photographic evidence attached, against my lawyer's advice.</p>
+        </div>
+      </div>
+      <div style="height:260px;border-bottom:2px solid #201e1d;position:relative">
+        <image-slot id="timeline-wide" shape="rect" fit="cover" placeholder="A photo from that trip"></image-slot>
+      </div>
+      <div style="display:grid;grid-template-columns:84px minmax(0,1fr);border-bottom:2px solid #201e1d">
+        <div style="padding:14px 16px;border-right:2px solid #201e1d;font-weight:800;font-size:20px;color:#ec3013">Yr 2</div>
+        <div style="padding:14px 16px">
+          <p style="margin:0;font-weight:600">The hard year</p>
+          <p style="margin:4px 0 0;color:#605d5d">You showed up. I noticed. I never said it properly, so: thank you.</p>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:84px minmax(0,1fr);border-bottom:2px solid #201e1d">
+        <div style="padding:14px 16px;border-right:2px solid #201e1d;font-weight:800;font-size:20px;color:#ec3013">Now</div>
+        <div style="padding:14px 16px">
+          <p style="margin:0;font-weight:600">Still here, still texting nonsense</p>
+          <div style="border-bottom:1px dashed #9b9797;height:24px;margin-top:8px"></div>
+          <sc-if value="{{ showFillHints }}" hint-placeholder-val="{{ true }}">
+            <p style="margin:8px 0 0;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#ae1800">add your own moment</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="04 Photo dump" style="border-bottom:2px solid #201e1d">
+    <div style="padding:24px 16px 16px">
+      <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ae1800">Photo dump</p>
+      <h2 style="margin:8px 0 8px;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.02em">Unedited, unapproved</h2>
+      <p style="margin:0;color:#605d5d">Eight frames she would not have posted.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2px;background:#201e1d;border-top:2px solid #201e1d;border-bottom:2px solid #201e1d">
+      <div style="height:200px;grid-column:span 2;background:#eae9e9"><image-slot id="dump-1" shape="rect" fit="cover" placeholder="Photo 1"></image-slot></div>
+      <div style="height:180px;background:#eae9e9"><image-slot id="dump-2" shape="rect" fit="cover" placeholder="Photo 2"></image-slot></div>
+      <div style="height:180px;background:#eae9e9"><image-slot id="dump-3" shape="rect" fit="cover" placeholder="Photo 3"></image-slot></div>
+      <div style="height:180px;background:#eae9e9"><image-slot id="dump-4" shape="rect" fit="cover" placeholder="Photo 4"></image-slot></div>
+      <div style="height:180px;background:#eae9e9"><image-slot id="dump-5" shape="rect" fit="cover" placeholder="Photo 5"></image-slot></div>
+      <div style="height:240px;grid-column:span 2;background:#eae9e9"><image-slot id="dump-6" shape="rect" fit="cover" placeholder="Photo 6"></image-slot></div>
+      <div style="height:170px;background:#eae9e9"><image-slot id="dump-7" shape="rect" fit="cover" placeholder="Photo 7"></image-slot></div>
+      <div style="height:170px;background:#eae9e9"><image-slot id="dump-8" shape="rect" fit="cover" placeholder="Photo 8"></image-slot></div>
+    </div>
+    <sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:12px 16px;display:grid;gap:6px;border-bottom:2px solid #201e1d">
+        <p style="margin:0;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#605d5d">01 — the one she asked me to delete</p>
+        <p style="margin:0;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#605d5d">06 — peak us, no notes</p>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-screen-label="05 Quiz" style="border-bottom:2px solid #201e1d;padding:24px 16px">
+    <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ae1800">The quiz</p>
+    <h2 style="margin:8px 0 8px;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.02em">How well do you know me?</h2>
+    <p style="margin:0 0 20px;color:#605d5d">Five questions. Be honest. I will know.</p>
+    <div style="display:grid;gap:0;border-top:2px solid #201e1d">
+      <div style="padding:14px 0;border-bottom:2px solid #201e1d">
+        <p style="margin:0 0 8px;font-weight:800;font-size:18px">1. What is my order, every single time?</p>
+        <p style="margin:0;color:#605d5d">a. the same thing · b. the same thing but iced · c. yours</p>
+      </div>
+      <div style="padding:14px 0;border-bottom:2px solid #201e1d">
+        <p style="margin:0 0 8px;font-weight:800;font-size:18px">2. Which of us starts the drama?</p>
+        <p style="margin:0;color:#605d5d">a. me · b. you · c. we both know the answer</p>
+      </div>
+      <div style="padding:14px 0;border-bottom:2px solid #201e1d">
+        <p style="margin:0 0 8px;font-weight:800;font-size:18px">3. The song that is legally ours</p>
+        <div style="border-bottom:1px dashed #9b9797;height:24px"></div>
+      </div>
+      <div style="padding:14px 0;border-bottom:2px solid #201e1d">
+        <p style="margin:0 0 8px;font-weight:800;font-size:18px">4. My most-used phrase in the chat</p>
+        <div style="border-bottom:1px dashed #9b9797;height:24px"></div>
+      </div>
+      <div style="padding:14px 0;border-bottom:2px solid #201e1d">
+        <p style="margin:0 0 8px;font-weight:800;font-size:18px">5. Where do we end up in ten years?</p>
+        <p style="margin:0;color:#605d5d">a. same city · b. same call, different cities · c. running something together, badly</p>
+      </div>
+    </div>
+    <sc-if value="{{ showAnswers }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:20px;border:2px solid #201e1d;padding:16px;background:#eae9e9">
+        <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#605d5d">Answer key</p>
+        <p style="margin:0;font-weight:600">1c · 2c · 3 you know it · 4 you know that too · 5c — obviously.</p>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-screen-label="06 Top ten" style="border-bottom:2px solid #201e1d">
+    <div style="padding:24px 16px 16px">
+      <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#ae1800">The list</p>
+      <h2 style="margin:8px 0 0;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.02em">Ten things only we find funny</h2>
+    </div>
+    <div style="border-top:2px solid #201e1d">
+      <sc-for list="{{ topTen }}" as="item" hint-placeholder-count="10">
+        <div style="display:grid;grid-template-columns:52px minmax(0,1fr);border-bottom:2px solid #201e1d">
+          <div style="padding:12px 16px;border-right:2px solid #201e1d;font-weight:800;font-size:18px;color:#ec3013">{{ item.n }}</div>
+          <div style="padding:12px 16px">{{ item.text }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <sc-if value="{{ showFillHints }}" hint-placeholder-val="{{ true }}">
+      <p style="margin:0;padding:12px 16px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#ae1800;border-bottom:2px solid #201e1d">blank rows → fill with your own inside jokes</p>
+    </sc-if>
+  </section>
+
+  <section data-screen-label="07 Back cover" style="background:#ec3013;color:#f3f2f2">
+    <div style="height:300px;position:relative;border-bottom:2px solid #f3f2f2">
+      <image-slot id="back-photo" shape="rect" fit="cover" placeholder="Photo of the two of us"></image-slot>
+    </div>
+    <div style="padding:28px 16px 40px">
+      <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;opacity:0.85">Back cover</p>
+      <h2 style="margin:10px 0 16px;font-weight:800;font-size:44px;line-height:0.95;letter-spacing:-0.03em;text-transform:uppercase">Happy birthday, Smarika</h2>
+      <p style="margin:0;font-size:17px;max-width:34ch">Another year of being the person I call first. Here's to the next one — same nonsense, better photos.</p>
+      <div style="margin-top:24px;border-top:2px solid #f3f2f2;padding-top:12px;display:flex;justify-content:space-between;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">
+        <span>Love, Palvika</span>
+        <span>02.09</span>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:430,&quot;height&quot;:900},&quot;showInstructions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Fill-in guide&quot;},&quot;showFillHints&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Fill-in guide&quot;},&quot;showAnswers&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;showCaptions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const written = [
+      "That voice note. You know the one.",
+      "Every time we say \"just one hour\" and lose the night.",
+      "The nickname neither of us will explain in public.",
+      "Splitting one dessert and pretending it was enough.",
+      "Your driving. My screaming. A perfect system.",
+      "The photo we retake in the same pose, every year."
+    ];
+    const topTen = written.map((text, i) => ({ n: String(i + 1).padStart(2, "0"), text }));
+    while (topTen.length < 10) {
+      topTen.push({ n: String(topTen.length + 1).padStart(2, "0"), text: "" });
+    }
+    return {
+      topTen,
+      showInstructions: this.props.showInstructions ?? true,
+      showFillHints: this.props.showFillHints ?? true,
+      showAnswers: this.props.showAnswers ?? true,
+      showCaptions: this.props.showCaptions ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

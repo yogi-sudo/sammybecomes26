@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Instrument+Serif:ital@0;1&display=swap">
+<script src="./image-slot.js"></script>
+<script src="./doc-page.js"></script>
+<style>
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Archivo", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #b03a1a; text-decoration: none; }
+  a:hover { color: #d4501f; }
+</style>
+</helmet>
+
+<doc-page size="letter">
+
+  <section class="page" data-screen-label="B · Cover" style="position:relative;background:#f4ece0;overflow:hidden">
+    <div style="position:absolute;inset:0"><image-slot id="b-cover" shape="rect" fit="cover" src="assets/p11-stairs.jpg" placeholder="Cover photo"></image-slot></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,30,24,0.58) 0%,rgba(38,30,24,0) 32%,rgba(38,30,24,0) 50%,rgba(38,30,24,0.8) 100%);pointer-events:none"></div>
+    <div style="position:absolute;top:0;left:0;right:0;padding:50px 60px;pointer-events:none">
+      <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#f4ece0;opacity:0.92">
+        <span>Issue No. 01 · Birthday annual</span><span>02 Sept</span>
+      </div>
+      <h1 style="margin:12px 0 0;font-weight:800;font-size:120px;line-height:0.82;letter-spacing:-0.05em;text-transform:uppercase;color:#f4ece0">Smarika</h1>
+      <div style="margin-top:14px;height:3px;background:#f4ece0"></div>
+      <p style="margin:12px 0 0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;color:#f4ece0">from seven of us to two</p>
+    </div>
+    <div style="position:absolute;left:60px;top:400px;display:grid;gap:9px;justify-items:start;pointer-events:none">
+      <span style="background:#c8401b;color:#f9f3e9;padding:8px 13px;font-size:14px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase">Six awards. Two of them earned.</span>
+      <span style="background:#f4ece0;color:#2b2320;padding:8px 13px;font-size:14px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase">Chitwan · Kulekhani · Poon Hill · ABC</span>
+    </div>
+    <div style="position:absolute;left:0;bottom:0;right:0;padding:56px 60px;pointer-events:none">
+      <div style="display:inline-block;background:#c8401b;color:#f9f3e9;padding:8px 14px;font-size:14px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase">Cover star: Mero puntu</div>
+      <p style="margin:20px 0 0;font-family:'Instrument Serif',Georgia,serif;font-size:54px;line-height:1.05;color:#f9f3e9;max-width:20ch">“I think we did pretty well.”</p>
+      <div style="margin-top:22px;display:flex;justify-content:space-between;align-items:flex-end;font-size:14px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#f4ece0;opacity:0.9">
+        <span>Edited by Palbika</span><span>Printed once, for one reader</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-screen-label="B · Letter" style="background:#f9f3e9;color:#2b2320;display:flex;flex-direction:column;padding:52px 60px">
+    <div style="display:flex;justify-content:space-between;padding-bottom:13px;border-bottom:3px solid #2b2320;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#7c7166">
+      <span>Editor's letter</span><span>Palbika</span>
+    </div>
+    <div style="flex:1;padding-top:26px">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#b03a1a">A word from the desk</p>
+      <h2 style="margin:10px 0 6px;font-family:'Instrument Serif',Georgia,serif;font-size:54px;line-height:1;letter-spacing:-0.01em">Happy birthday, <span style="font-style:italic">Mero puntu</span>.</h2>
+      <p style="margin:0 0 18px;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#7c7166">Words: Palbika · Photographs: six years of camera roll</p>
+      <div style="border-top:3px solid #2b2320;padding-top:16px;column-count:2;column-gap:28px;font-size:15.5px;line-height:1.6;text-wrap:pretty">
+        <p style="margin:0 0 12px"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:62px;line-height:0.7;float:left;margin:7px 10px 0 0;color:#c8401b">H</span>onestly, I don't even know how we got here, but I'm really glad we did. Out of all the people we met in college, I got you — either luck, or a clerical error nobody has bothered to correct.</p>
+        <p style="margin:0 0 12px">From seven people in a group to just two of us still going strong. I think we did pretty well, considering neither of us has arrived anywhere on time since 2020.</p>
+        <p style="margin:0">Here's to more random café plans, stupid decisions, long talks, unnecessary gossip, career discussions, trips, prayers, growing up and somehow still being idiots together.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:186px minmax(0,1fr);gap:20px;align-items:start;margin-top:20px;border-top:1px solid #ddd2c2;padding-top:16px">
+        <div>
+          <div style="height:230px;background:#eee4d4;border:3px solid #2b2320"><image-slot id="b-portrait" shape="rect" fit="cover" src="assets/p03-pink-kurta.jpg" placeholder="A photo of her"></image-slot></div>
+          <p style="margin:8px 0 0;font-size:13px;color:#7c7166">Matching without planning it. Allegedly.</p>
+        </div>
+        <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:29px;line-height:1.26;border-left:3px solid #c8401b;padding-left:18px">“You stopped feeling like just a best friend. You became family.”</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;padding-top:13px;border-top:3px solid #2b2320;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#7c7166">
+      <span>04</span><span>Editor's letter</span>
+    </div>
+  </section>
+
+  <section class="page" data-screen-label="B · Photos" style="background:#f9f3e9;color:#2b2320;display:flex;flex-direction:column;padding:52px 60px">
+    <div style="display:flex;justify-content:space-between;padding-bottom:13px;border-bottom:3px solid #2b2320;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#7c7166">
+      <span>Portfolio</span><span>Four frames</span>
+    </div>
+    <div style="flex:1;padding-top:24px;display:flex;flex-direction:column">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#b03a1a">Photo essay</p>
+      <h2 style="margin:10px 0 8px;font-weight:800;font-size:46px;line-height:0.94;letter-spacing:-0.035em;text-transform:uppercase">Unedited, unapproved</h2>
+      <p style="margin:0 0 16px;font-size:15px;color:#7c7166;max-width:48ch">Six years of evidence. Several of these were submitted for deletion. Request denied.</p>
+      <div style="flex:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:3px;background:#2b2320;border:3px solid #2b2320">
+        <div style="background:#eee4d4"><image-slot id="b-p1" shape="rect" fit="cover" src="assets/p09-waterfall.jpg" placeholder="Photo"></image-slot></div>
+        <div style="background:#eee4d4"><image-slot id="b-p2" shape="rect" fit="cover" src="assets/p13-bridge.jpg" placeholder="Photo"></image-slot></div>
+        <div style="background:#eee4d4"><image-slot id="b-p3" shape="rect" fit="cover" src="assets/p05-hilltop.jpg" placeholder="Photo"></image-slot></div>
+        <div style="background:#eee4d4"><image-slot id="b-p4" shape="rect" fit="cover" src="assets/p14-grid.jpg" placeholder="Photo"></image-slot></div>
+      </div>
+      <p style="margin:10px 0 0;font-size:13.5px;color:#7c7166">Clockwise: Kulekhani, the bridge, the hilltop, and four frames of one plan.</p>
+    </div>
+    <div style="display:flex;justify-content:space-between;padding-top:13px;border-top:3px solid #2b2320;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#7c7166">
+      <span>08</span><span>Photo essay</span>
+    </div>
+  </section>
+
+  <section class="page" data-screen-label="B · Back" style="background:#c8401b;color:#f9f3e9;display:flex;flex-direction:column">
+    <div style="height:400px;background:#a83717;border-bottom:3px solid #f9f3e9"><image-slot id="b-back" shape="rect" fit="cover" src="assets/p10-sunrise.jpg" placeholder="Photo of the two of us"></image-slot></div>
+    <div style="flex:1;padding:44px 60px 0">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;opacity:0.85">Back cover</p>
+      <h2 style="margin:14px 0 18px;font-family:'Instrument Serif',Georgia,serif;font-size:66px;line-height:1;letter-spacing:-0.01em">Happy birthday,<br><span style="font-style:italic">Mero puntu</span></h2>
+      <p style="margin:0 0 24px;font-size:22px;line-height:1.5;max-width:32ch">And no matter where life takes us, I hope it always brings us back to each other.</p>
+      <div style="border:3px solid #f9f3e9;padding:18px">
+        <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;opacity:0.85">Subscription</p>
+        <p style="margin:9px 0 0;font-weight:800;font-size:23px;line-height:1.15">Renews automatically. Every year. No cancellation option.</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;padding:18px 60px;border-top:3px solid #f9f3e9;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase">
+      <span>Love, Palbika</span><span>02.09 · Issue No. 01</span>
+    </div>
+  </section>
+
+</doc-page>
+</x-dc>
+</body>
+</html>
